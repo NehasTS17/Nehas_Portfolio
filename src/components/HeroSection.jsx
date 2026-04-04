@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import profileImage from '../assets/profile_img.png';
+import profileImage from '../assets/Profile_img.png';
 import Resume from '../assets/DotNet_Resume.pdf';
 
 const HeroSection = () => {
