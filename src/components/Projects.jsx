@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Fitfusion from '../assets/Fitfusion.png';
+import Fitfusion from '../assets/FitFusion.png';
 import PhoneMart from '../assets/PhoneMart.png';
 import Portfolio1 from '../assets/Portfolio1.png';
 import Portfolio2 from '../assets/Portfolio2.png';
