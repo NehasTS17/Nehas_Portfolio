@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-dark: #000000;
+  --text: #262626;
+  --text-secondary: #8e8e8e;
+  --surface: #fafafa;
+  --surface-dark: #121212;
+  --border: #dbdbdb;
+  --border-dark: #1f1f1f;
+  --gradient-1: #833ab4;
+  --gradient-2: #fd1d1d;
+  --gradient-3: #fcb045;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+}
+
+/* Theme-sensitive Tailwind class overrides */
+body.instagram .bg-white {
+  background-color: var(--surface) !important;
+}
+
+body.instagram.dark .bg-dark-900 {
+  background-color: var(--surface-dark) !important;
+}
+
+body.instagram .text-dark-900 {
+  color: var(--text) !important;
+}
+
+body.instagram.dark .text-white {
+  color: #ffffff !important;
+}
+
+body.instagram .border-primary-500 {
+  border-color: var(--gradient-1) !important;
+}
+
+body.instagram .text-primary-600 {
+  color: var(--gradient-1) !important;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 99;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(131, 58, 180, 0.4);
+}
+
+.scroll-to-top.show {
+  display: flex;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(131, 58, 180, 0.6);
+}
+
+/* Instagram Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Ensure visibility with fallback */
+  color: #262626;
+}
+
+body.dark .gradient-text {
+  color: #ffffff;
+}
+
+body.instagram .gradient-text {
+  background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 50%, var(--gradient-3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section Title Styling - More Visible */
+.section-title {
+  color: #262626;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+body.dark .section-title {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  border-radius: 2px;
+}
+
+/* Navbar Active Animation */
+.navbar-active-link {
+  position: relative;
+}
+
+.navbar-active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  border-radius: 1px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-active-link.active::after {
+  width: 100%;
+}
+
+/* Smooth Transitions */
+.smooth-transition {
+  transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8e8e8e;
+}
+
+body.dark ::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: #262626;
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
