@@ -16,8 +16,8 @@ const Projects = () => {
       technologies: ['React', 'Tailwind CSS', 'JavaScript'],
       image: PhoneMart,
       category: 'frontend',
-      link: 'https://github.com/NehasTS17/PhoneMart',
-      code: 'https://github.com/NehasTS17/PhoneMart',
+      link: 'https://phone-mart-xi.vercel.app/',
+      code: 'https://github.com/NehasTS17',
       features: ['Product Filtering', 'Responsive UI', 'Shopping Cart'],
       gradient: 'from-blue-500 to-cyan-500',
       status: 'completed'
