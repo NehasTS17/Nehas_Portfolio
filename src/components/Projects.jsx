@@ -72,7 +72,7 @@ const Projects = () => {
       link: 'https://todoapp-nehas.netlify.app/',
       code: '#',
       features: ['Dark WhatsApp-Inspired UI','Add, Edit & Delete Tasks','Mark Tasks as Completed','Responsive Design'],
-      gradient: 'from-lime-500 to-teal-500',
+      gradient: 'from-lime-500 to-amber-500',
       status: 'completed'
     },
   ];
