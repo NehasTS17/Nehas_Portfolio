@@ -4,6 +4,7 @@ import Fitfusion from '../assets/FitFusion.png';
 import PhoneMart from '../assets/PhoneMart.png';
 import Portfolio1 from '../assets/Portfolio1.png';
 import Portfolio2 from '../assets/Portfolio2.png';
+import Todo from '../assets/Todo.png';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -59,6 +60,19 @@ const Projects = () => {
       code: '#',
       features: ['User Auth', 'Real-time Updates', 'Database Integration'],
       gradient: 'from-green-500 to-emerald-500',
+      status: 'completed'
+    },
+     {
+      id: 5,
+      title: 'TodoApp',
+      description: 'A modern and responsive task management application built with React and Tailwind CSS. Designed with a dark WhatsApp-inspired theme, it allows users to efficiently add, edit, delete, and manage daily tasks.',
+      technologies: ['React', 'Tailwindcss'],
+      image: Todo,
+      category: 'frontend',
+      link: 'https://todoapp-nehas.netlify.app/',
+      code: '#',
+      features: ['Dark WhatsApp-Inspired UI','Add, Edit & Delete Tasks','Mark Tasks as Completed','Responsive Design'],
+      gradient: 'from-lime-500 to-lime-500',
       status: 'completed'
     },
   ];
