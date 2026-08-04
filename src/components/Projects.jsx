@@ -65,7 +65,7 @@ const Projects = () => {
      {
       id: 5,
       title: 'TodoApp',
-      description: 'A modern and responsive task management application built with React and Tailwind CSS. Designed with a dark WhatsApp-inspired theme, it allows users to efficiently add, edit, delete, and manage daily tasks.',
+      description: 'A responsive task management app with a dark WhatsApp-inspired UI for adding, editing, deleting, and managing daily tasks.',
       technologies: ['React', 'Tailwindcss'],
       image: Todo,
       category: 'frontend',
