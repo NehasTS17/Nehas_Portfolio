@@ -42,7 +42,7 @@ const Certifications = () => {
     {
       "id": 4,
       "title": "Certificate of Merit - 52nd College Day",
-      "issuer": "Aruti Anandar College (Autonomous)",
+      "issuer": "Arul Anandar College (Autonomous)",
       "date": "2021",
       "icon": "fas fa-award",
       "description": "Merit certificate awarded for outstanding achievement during the academic year 2020-2021 on the occasion of the 52nd College Day.",
@@ -54,7 +54,7 @@ const Certifications = () => {
     {
       "id": 5,
       "title": "Faculty Development Programme on Python for Data Science",
-      "issuer": "Aruti Anandar College (Autonomous), Department of Computer Science & Applications",
+      "issuer": "Arul Anandar College (Autonomous), Department of Computer Science & Applications",
       "date": "2021",
       "icon": "fas fa-chalkboard-teacher",
       "description": "One-day Faculty Development Programme on 'Python for Data Science: Polity and Information Technology' organized by the Department of Computer Science & Applications, Aruti Anandar College, Karumaathur, Madurai.",
