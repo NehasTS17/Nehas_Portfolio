@@ -72,7 +72,7 @@ const Projects = () => {
       link: 'https://todoapp-nehas.netlify.app/',
       code: '#',
       features: ['Dark WhatsApp-Inspired UI','Add, Edit & Delete Tasks','Mark Tasks as Completed','Responsive Design'],
-      gradient: 'from-lime-500 to-mauve-500',
+      gradient: 'from-lime-500 to-teal-500',
       status: 'completed'
     },
   ];
@@ -287,7 +287,7 @@ const Projects = () => {
 
                   {/* Features */}
                   <div className="space-y-2">
-                    {project.features.map((feature, index) => (
+                    {project.features.slice(0, 3).map((feature, index) => (
                       <motion.div
                         key={index}
                         initial={{ opacity: 0, x: -10 }}
